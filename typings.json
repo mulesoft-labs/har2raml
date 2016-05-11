@@ -1,0 +1,6 @@
+{
+  "ambientDependencies": {
+    "har": "file:custom_typings/har.d.ts",
+    "mkdirp": "github:DefinitelyTyped/DefinitelyTyped/mkdirp/mkdirp.d.ts#52fa2b9ce36f2c5843204e9bfbaada7cded9b47a"
+  }
+}

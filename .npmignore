@@ -1,0 +1,22 @@
+/node_modules
+
+npm-debug.log
+
+*.iml
+
+.project
+.settings
+
+/browserVersion
+
+/src
+
+gulpfile.js
+
+tsconfig.json
+
+typings.json
+
+RAML Parser.png
+
+.travis.yml

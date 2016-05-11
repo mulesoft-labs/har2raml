@@ -1,0 +1,17 @@
+/node_modules
+
+npm-debug.log
+
+*.iml
+
+.project
+.settings
+.idea
+
+/src/**/*.js
+/src/**/*.js.map
+/src/**/*.d.ts
+
+/typings/
+
+/dist/
