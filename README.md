@@ -10,4 +10,4 @@ npm run build
 ```
 
 ##Usage
-See `src/test.ts` for example.
+See `src/test.ts` and `src/testSingle.ts` for examples.
