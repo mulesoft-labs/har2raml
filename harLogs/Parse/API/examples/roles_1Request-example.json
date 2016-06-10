@@ -1,9 +1,0 @@
-{
-  "name": "Programmer",
-  "ACL": {
-    "*": {
-      "read": true,
-      "write": true
-    }
-  }
-}
