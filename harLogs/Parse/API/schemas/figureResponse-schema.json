@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "properties": {
+    "results": {
+      "required": false,
+      "type": "array",
+      "items": [
+        null
+      ]
+    }
+  }
+}

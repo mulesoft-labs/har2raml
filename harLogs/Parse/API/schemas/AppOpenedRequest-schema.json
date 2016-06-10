@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "properties": {
+    "at": {
+      "required": false,
+      "type": "object",
+      "properties": {
+        "__type": {
+          "required": false,
+          "type": "string"
+        },
+        "iso": {
+          "required": false,
+          "type": "string"
+        }
+      }
+    }
+  }
+}

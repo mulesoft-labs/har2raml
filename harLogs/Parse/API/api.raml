@@ -1,0 +1,738 @@
+#%RAML 0.8
+title: RAML API
+version: v1
+baseUri: https://api.parse.com/1
+schemas:
+  - rectangle: !include schemas/rectangleResponse-schema.json
+  - rectangle_1: !include schemas/rectangle_1Request-schema.json
+  - rectangle_2: !include schemas/rectangle_2Response-schema.json
+  - qDU8LWnI5A: !include schemas/qDU8LWnI5AResponse-schema.json
+  - qDU8LWnI5A_1: !include schemas/qDU8LWnI5A_1Request-schema.json
+  - qDU8LWnI5A_2: !include schemas/qDU8LWnI5A_2Response-schema.json
+  - 6G1oPK7Kkp: !include schemas/6G1oPK7KkpResponse-schema.json
+  - figure: !include schemas/figureResponse-schema.json
+  - batch: !include schemas/batchRequest-schema.json
+  - batch_1: !include schemas/batch_1Response-schema.json
+  - calculateAreasSum: !include schemas/calculateAreasSumRequest-schema.json
+  - calculateAreasSum_1: !include schemas/calculateAreasSum_1Response-schema.json
+  - MyFiletxt: !include schemas/MyFiletxtResponse-schema.json
+  - AppOpened: !include schemas/AppOpenedRequest-schema.json
+  - MyEvent: !include schemas/MyEventRequest-schema.json
+  - push: !include schemas/pushRequest-schema.json
+  - push_1: !include schemas/push_1Response-schema.json
+  - installations: !include schemas/installationsRequest-schema.json
+  - qupRKzzmfj: !include schemas/qupRKzzmfjResponse-schema.json
+  - users: !include schemas/usersResponse-schema.json
+  - users_1: !include schemas/users_1Request-schema.json
+  - users_2: !include schemas/users_2Response-schema.json
+  - YPOV1AkiQC: !include schemas/YPOV1AkiQCResponse-schema.json
+  - YPOV1AkiQC_1: !include schemas/YPOV1AkiQC_1Request-schema.json
+  - me: !include schemas/meResponse-schema.json
+  - login: !include schemas/loginResponse-schema.json
+  - roles: !include schemas/rolesResponse-schema.json
+  - roles_1: !include schemas/roles_1Request-schema.json
+  - qfKa5JJvgH: !include schemas/qfKa5JJvgHResponse-schema.json
+  - fRbQZ9EXXF: !include schemas/fRbQZ9EXXFRequest-schema.json
+  - requestPasswordReset: !include schemas/requestPasswordResetRequest-schema.json
+/classes:
+  /rectangle:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: rectangle
+              example: !include examples/rectangleResponse-example.json
+    post:
+      body:
+        application/json:
+          schema: rectangle_1
+          example: !include examples/rectangle_1Request-example.json
+      responses:
+        201:
+          body:
+            application/json:
+              schema: rectangle_2
+              example: !include examples/rectangle_2Response-example.json
+    /JrRLNTUs55:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /faQD9BIjY0:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /cvhSNOjBVN:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /4UFW3ByM7G:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /qDU8LWnI5A:
+      get:
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A
+                example: !include examples/qDU8LWnI5AResponse-example.json
+      put:
+        body:
+          application/json:
+            schema: qDU8LWnI5A_1
+            example: !include examples/qDU8LWnI5A_1Request-example.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A_2
+                example: !include examples/qDU8LWnI5A_2Response-example.json
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /KeVoHt0qbJ:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /A0bHTLY8AB:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /6G1oPK7Kkp:
+      get:
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A
+                example: !include examples/6G1oPK7KkpResponse-example.json
+          404:
+            body:
+              application/json:
+                schema: 6G1oPK7Kkp
+                example: !include examples/6G1oPK7Kkp_1Response-example.json
+      put:
+        body:
+          application/json:
+            schema: qDU8LWnI5A_1
+            example: !include examples/qDU8LWnI5A_1Request-example.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A_2
+                example: !include examples/6G1oPK7Kkp_2Response-example.json
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /UD4a40Cv1c:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /2FinLNuCbi:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /5wwNNkmyM9:
+      get:
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A
+                example: !include examples/5wwNNkmyM9Response-example.json
+          404:
+            body:
+              application/json:
+                schema: 6G1oPK7Kkp
+                example: !include examples/6G1oPK7Kkp_1Response-example.json
+      put:
+        body:
+          application/json:
+            schema: qDU8LWnI5A_1
+            example: !include examples/qDU8LWnI5A_1Request-example.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A_2
+                example: !include examples/5wwNNkmyM9_1Response-example.json
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+  /figure:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: figure
+              example: !include examples/figureResponse-example.json
+    post:
+      body:
+        application/json:
+          schema: rectangle_1
+          example: !include examples/rectangle_1Request-example.json
+      responses:
+        201:
+          body:
+            application/json:
+              schema: rectangle_2
+              example: !include examples/figure_1Response-example.json
+    /W7MpNMWsOp:
+      get:
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A
+                example: !include examples/W7MpNMWsOpResponse-example.json
+          404:
+            body:
+              application/json:
+                schema: 6G1oPK7Kkp
+                example: !include examples/6G1oPK7Kkp_1Response-example.json
+      put:
+        body:
+          application/json:
+            schema: qDU8LWnI5A_1
+            example: !include examples/qDU8LWnI5A_1Request-example.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A_2
+                example: !include examples/W7MpNMWsOp_1Response-example.json
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /qQPBekORn4:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /BcdSiBYxAp:
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+    /ewFOy61Mej:
+      get:
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A
+                example: !include examples/ewFOy61MejResponse-example.json
+          404:
+            body:
+              application/json:
+                schema: 6G1oPK7Kkp
+                example: !include examples/6G1oPK7Kkp_1Response-example.json
+      put:
+        body:
+          application/json:
+            schema: qDU8LWnI5A_1
+            example: !include examples/qDU8LWnI5A_1Request-example.json
+        responses:
+          200:
+            body:
+              application/json:
+                schema: qDU8LWnI5A_2
+                example: !include examples/ewFOy61Mej_1Response-example.json
+      delete:
+        body:
+          application/json:
+        responses:
+          200:
+            body:
+              application/json:
+/batch:
+  post:
+    body:
+      application/json:
+        schema: batch
+        example: !include examples/batchRequest-example.json
+    responses:
+      200:
+        body:
+          application/json:
+            schema: batch_1
+            example: !include examples/batch_1Response-example.json
+/functions:
+  /calculateAreasSum:
+    post:
+      body:
+        application/json:
+          schema: calculateAreasSum
+          example: !include examples/calculateAreasSumRequest-example.json
+      responses:
+        200:
+          body:
+            application/json:
+              schema: calculateAreasSum_1
+              example: !include examples/calculateAreasSum_1Response-example.json
+/files:
+  /MyFile.txt:
+    post:
+      body:
+        text/plain;charset=UTF-8:
+      responses:
+        201:
+          body:
+            application/json:
+              schema: MyFiletxt
+              example: !include examples/MyFiletxtResponse-example.json
+/events:
+  /AppOpened:
+    post:
+      body:
+        application/json:
+          schema: AppOpened
+          example: !include examples/AppOpenedRequest-example.json
+      responses:
+        200:
+          body:
+            application/json:
+  /MyEvent:
+    post:
+      body:
+        application/json:
+          schema: MyEvent
+          example: !include examples/MyEventRequest-example.json
+      responses:
+        200:
+          body:
+            application/json:
+/push:
+  post:
+    body:
+      application/json:
+        schema: push
+        example: !include examples/pushRequest-example.json
+    responses:
+      200:
+        body:
+          application/json:
+            schema: push_1
+            example: !include examples/push_1Response-example.json
+/installations:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            schema: figure
+            example: !include examples/figureResponse-example.json
+  post:
+    body:
+      application/json:
+        schema: installations
+        example: !include examples/installationsRequest-example.json
+    responses:
+      201:
+        body:
+          application/json:
+            schema: rectangle_2
+            example: !include examples/installations_1Response-example.json
+  /qupRKzzmfj:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qupRKzzmfj
+              example: !include examples/qupRKzzmfjResponse-example.json
+    put:
+      body:
+        application/json:
+          schema: installations
+          example: !include examples/qupRKzzmfj_1Request-example.json
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qDU8LWnI5A_2
+              example: !include examples/qupRKzzmfj_2Response-example.json
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /fKOzh2gFxO:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qupRKzzmfj
+              example: !include examples/fKOzh2gFxOResponse-example.json
+        404:
+          body:
+            application/json:
+              schema: 6G1oPK7Kkp
+              example: !include examples/6G1oPK7Kkp_1Response-example.json
+    put:
+      body:
+        application/json:
+          schema: installations
+          example: !include examples/qupRKzzmfj_1Request-example.json
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qDU8LWnI5A_2
+              example: !include examples/fKOzh2gFxO_1Response-example.json
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+/users:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            schema: users
+            example: !include examples/usersResponse-example.json
+  post:
+    body:
+      application/json:
+        schema: users_1
+        example: !include examples/users_1Request-example.json
+    responses:
+      201:
+        body:
+          application/json:
+            schema: users_2
+            example: !include examples/users_2Response-example.json
+  /AasWoEA7Vl:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /Ml0XT8nwkK:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /RXnTrWv4dI:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /zsLxfyuCRZ:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /h8BBKhInZ1:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /wUzjfJjHM5:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /4yw46QbsZN:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /f64hvOqLyO:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /7qjH8ktoW2:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /YPOV1AkiQC:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: YPOV1AkiQC
+              example: !include examples/YPOV1AkiQCResponse-example.json
+    put:
+      body:
+        application/json:
+          schema: YPOV1AkiQC_1
+          example: !include examples/YPOV1AkiQC_1Request-example.json
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qDU8LWnI5A_2
+              example: !include examples/YPOV1AkiQC_2Response-example.json
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /me:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: me
+              example: !include examples/meResponse-example.json
+  /fm65y2Alsg:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: YPOV1AkiQC
+              example: !include examples/fm65y2AlsgResponse-example.json
+        404:
+          body:
+            application/json:
+              schema: 6G1oPK7Kkp
+              example: !include examples/6G1oPK7Kkp_1Response-example.json
+    put:
+      body:
+        application/json:
+          schema: YPOV1AkiQC_1
+          example: !include examples/YPOV1AkiQC_1Request-example.json
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qDU8LWnI5A_2
+              example: !include examples/fm65y2Alsg_1Response-example.json
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+/login:
+  get:
+    queryParameters:
+      username:
+        example: dude
+      password:
+        example: carpet
+    responses:
+      200:
+        body:
+          application/json:
+            schema: login
+            example: !include examples/loginResponse-example.json
+      404:
+        body:
+          application/json:
+            schema: 6G1oPK7Kkp
+            example: !include examples/login_1Response-example.json
+/roles:
+  get:
+    queryParameters:
+      where:
+    responses:
+      200:
+        body:
+          application/json:
+            schema: roles
+            example: !include examples/rolesResponse-example.json
+  post:
+    body:
+      application/json:
+        schema: roles_1
+        example: !include examples/roles_1Request-example.json
+    responses:
+      201:
+        body:
+          application/json:
+            schema: rectangle_2
+            example: !include examples/roles_2Response-example.json
+  /NT7Rnj7HRs:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /svWDnrTn73:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /qfKa5JJvgH:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qfKa5JJvgH
+              example: !include examples/qfKa5JJvgHResponse-example.json
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /fRbQZ9EXXF:
+    put:
+      body:
+        application/json:
+          schema: fRbQZ9EXXF
+          example: !include examples/fRbQZ9EXXFRequest-example.json
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qDU8LWnI5A_2
+              example: !include examples/fRbQZ9EXXF_1Response-example.json
+  /jNaPQAQRT4:
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /HPTKz58cUT:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qfKa5JJvgH
+              example: !include examples/HPTKz58cUTResponse-example.json
+        404:
+          body:
+            application/json:
+              schema: 6G1oPK7Kkp
+              example: !include examples/6G1oPK7Kkp_1Response-example.json
+    delete:
+      body:
+        application/json:
+      responses:
+        200:
+          body:
+            application/json:
+  /dKtyiMwOnn:
+    put:
+      body:
+        application/json:
+          schema: fRbQZ9EXXF
+          example: !include examples/dKtyiMwOnnRequest-example.json
+      responses:
+        200:
+          body:
+            application/json:
+              schema: qDU8LWnI5A_2
+              example: !include examples/dKtyiMwOnn_1Response-example.json
+/requestPasswordReset:
+  post:
+    body:
+      application/json:
+        schema: requestPasswordReset
+        example: !include examples/requestPasswordResetRequest-example.json
+    responses:
+      200:
+        body:
+          application/json:

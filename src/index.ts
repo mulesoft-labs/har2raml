@@ -744,12 +744,19 @@ export class Har2Raml {
     bUri:string=""
 
     launch(logsPath:string,bUri:string):IRawApi{
-        var files = fs.readdirSync(logsPath);
-        this.bUri=bUri;
         var harLogs:har.Log[] = []
-        files = files.filter(x=>stringEndsWith(x,'har.json')||stringEndsWith(x,'.har'))
-        files.forEach(x=>harLogs.push(JSON.parse(fs.readFileSync(path.resolve(logsPath,x)).toString())['log']))
-        var api:IRawApi = this.har2raml(harLogs)
+        this.bUri=bUri;
+        if(fs.lstatSync(logsPath).isDirectory()) {
+            var files = fs.readdirSync(logsPath);
+            files = files.filter(x=>stringEndsWith(x, 'har.json') || stringEndsWith(x, '.har'))
+            files.forEach(x=>harLogs.push(JSON.parse(fs.readFileSync(path.resolve(logsPath, x)).toString())['log']))
+        }
+        else{
+            if(path.extname(logsPath)==".har"){
+                harLogs.push(JSON.parse(fs.readFileSync(logsPath).toString())['log']);
+            }
+        }
+        var api:IRawApi = this.har2raml(harLogs);
         return api
     }
 

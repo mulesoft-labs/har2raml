@@ -1,0 +1,18 @@
+{
+  "rectanglesArray": [
+    {
+      "a": 100,
+      "b": 200,
+      "createdAt": "2015-05-21T01:20:29.358Z",
+      "objectId": "O2gEcrADRK",
+      "updatedAt": "2015-05-21T01:20:29.358Z"
+    },
+    {
+      "a": 110,
+      "b": 220,
+      "createdAt": "2015-05-21T01:20:29.358Z",
+      "objectId": "2AMnO36wpO",
+      "updatedAt": "2015-05-21T01:20:29.358Z"
+    }
+  ]
+}

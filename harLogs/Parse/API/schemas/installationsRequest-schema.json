@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "properties": {
+    "deviceType": {
+      "required": false,
+      "type": "string"
+    },
+    "deviceToken": {
+      "required": false,
+      "type": "string"
+    },
+    "channels": {
+      "required": false,
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "ACL": {
+        "*": {
+          "read": true,
+          "write": true
+        }
+      },
+      "createdAt": "2015-03-23T14:39:26.072Z",
+      "name": "Programmer7",
+      "objectId": "NT7Rnj7HRs",
+      "roles": {
+        "__type": "Relation",
+        "className": "_Role"
+      },
+      "updatedAt": "2015-03-23T14:39:26.072Z",
+      "users": {
+        "__type": "Relation",
+        "className": "_User"
+      }
+    },
+    {
+      "ACL": {
+        "*": {
+          "read": true,
+          "write": true
+        }
+      },
+      "createdAt": "2015-03-23T14:39:40.798Z",
+      "name": "Programmer",
+      "objectId": "svWDnrTn73",
+      "roles": {
+        "__type": "Relation",
+        "className": "_Role"
+      },
+      "updatedAt": "2015-03-23T14:42:05.219Z",
+      "users": {
+        "__type": "Relation",
+        "className": "_User"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "required": true,
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "required": false,
+      "type": "string"
+    },
+    "ACL": {
+      "required": false,
+      "type": "object",
+      "properties": {
+        "*": {
+          "required": false,
+          "type": "object",
+          "properties": {
+            "read": {
+              "required": false,
+              "type": "boolean"
+            },
+            "write": {
+              "required": false,
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

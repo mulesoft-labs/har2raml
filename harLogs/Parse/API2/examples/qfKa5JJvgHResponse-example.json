@@ -1,0 +1,19 @@
+{
+  "ACL": {
+    "*": {
+      "read": true
+    }
+  },
+  "createdAt": "2015-05-21T01:27:52.906Z",
+  "name": "Moderator",
+  "objectId": "qfKa5JJvgH",
+  "roles": {
+    "__type": "Relation",
+    "className": "_Role"
+  },
+  "updatedAt": "2015-05-21T01:27:52.906Z",
+  "users": {
+    "__type": "Relation",
+    "className": "_User"
+  }
+}

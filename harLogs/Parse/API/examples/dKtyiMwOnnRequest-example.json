@@ -1,0 +1,17 @@
+{
+  "users": {
+    "__op": "AddRelation",
+    "objects": [
+      {
+        "__type": "Pointer",
+        "className": "_User",
+        "objectId": "f64hvOqLyO"
+      },
+      {
+        "__type": "Pointer",
+        "className": "_User",
+        "objectId": "f64hvOqLyO"
+      }
+    ]
+  }
+}
